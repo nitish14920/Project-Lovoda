@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    body{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    #form {
+        position: relative;
+        left: 500px;
+        top: 150px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        height: 35px;
+        width: 250px;
+        border: 1px solid gray;
+    }
+    #signin{
+        color: rgb(77, 74, 74);
+        font-size: 30px;
+        
+    }
+    label{
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+    .star{
+        color: red;
+    }
+    .login-btn{
+        width: 250px;
+        height: 35px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        background-color: white;
+        font-weight: 600;
+    }
+    #form-container{
+        width: 250px;
+    }
+    a{
+        color: rgb(104, 103, 103);
+        font-size: 15PX;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    
+    <div id="form-container">
+        
+        <form id="form" action="">
+            <p id="signin">Sign in</p> <br>
+            <label for="username">Email Address <span class="star">*</span></label><br>
+            <input id="username" type="text" placeholder="Username"><br>
+            <label for="password">Password <span class="star">*</span></label><br>
+            <input id="password" type="text" placeholder="Password"><br>
+            <button class="login-btn" id="login-btn" onclick="login(event)">LOGIN</button>
+            <button class="login-btn" id="reg-btn" onclick="register(event)">REGISTER</button>
+            <a href="">Forgot your password ?</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script src="login-page.js"></script>
